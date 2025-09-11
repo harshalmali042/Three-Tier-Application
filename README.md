@@ -1,6 +1,6 @@
-# TriKube – Three-Tier Application Deployment on AWS EKS
+# Three-Tier Application Deployment on AWS EKS
 
-This project demonstrates the deployment of a **scalable three-tier web application** (ReactJS, NodeJS, MongoDB) on **Amazon EKS (Elastic Kubernetes Service)**. and use **Kubernetes for orchestration**, **AWS ALB for load balancing**.
+This project demonstrates the deployment of a **three-tier web application** (ReactJS, NodeJS, MongoDB) on **Amazon EKS (Elastic Kubernetes Service)** and use **Kubernetes for orchestration**, **AWS ALB for load balancing**.
 
 ---
 
