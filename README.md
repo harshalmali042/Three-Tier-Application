@@ -93,4 +93,4 @@ kubectl apply -f k8s/services.yaml
 * Leveraging **AWS ALB** for scalable and highly available architecture
 * Hands-on experience with **cloud-native technologies, containerization, and orchestration**
 
----
+
