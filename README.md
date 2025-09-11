@@ -1,21 +1,6 @@
-Perfect 👍 Let’s give your project a **unique name** and a professional **README.md** file for GitHub.
-
----
-
-### ✅ Unique Project Name
-
-**TriKube**
-(*Three-Tier + Kubernetes*)
-👉 Clear, professional, and meaningful. It shows that your project is a **three-tier app deployed on Kubernetes (EKS)**.
-
----
-
-### 📄 `README.md` file
-
-````markdown
 # TriKube – Three-Tier Application Deployment on AWS EKS
 
-This project demonstrates the deployment of a **scalable three-tier web application** (ReactJS, NodeJS, MongoDB) on **Amazon EKS (Elastic Kubernetes Service)**. It highlights the use of **Kubernetes for orchestration**, **AWS ALB for load balancing**, and best practices in cloud-native application deployment.
+This project demonstrates the deployment of a **scalable three-tier web application** (ReactJS, NodeJS, MongoDB) on **Amazon EKS (Elastic Kubernetes Service)**. and use **Kubernetes for orchestration**, **AWS ALB for load balancing**.
 
 ---
 
@@ -25,7 +10,7 @@ This project demonstrates the deployment of a **scalable three-tier web applicat
 - **Database:** MongoDB  
 - **Orchestration:** Kubernetes on AWS EKS  
 - **Load Balancer:** AWS Application Load Balancer (ALB)  
-- **Containerization:** Docker  
+- **Containerization:** ECR  
 
 The application follows the **three-tier architecture**:
 1. **Presentation Layer (ReactJS)** – User interface  
@@ -35,6 +20,8 @@ The application follows the **three-tier architecture**:
 ---
 
 ## 🏗️ Architecture
+
+
 ```plaintext
         [ User ]
            |
@@ -54,14 +41,8 @@ The application follows the **three-tier architecture**:
 
 ## 📦 Deployment Steps
 
-### 1. Clone Repository
 
-```bash
-git clone https://github.com/harshalmali042/There-tier-application.git
-cd There-tier-application
-```
-
-### 2. Build Docker Images
+### 1. Build Docker Images
 
 ```bash
 docker build -t react-frontend ./frontend
@@ -69,7 +50,7 @@ docker build -t node-backend ./backend
 docker build -t mongo-db ./database
 ```
 
-### 3. Push Images to Amazon ECR
+### 2. Push Images to Amazon ECR
 
 ```bash
 aws ecr create-repository --repository-name react-frontend
@@ -79,7 +60,7 @@ aws ecr create-repository --repository-name mongo-db
 
 Push images to ECR after login.
 
-### 4. Deploy on EKS
+### 3. Deploy on EKS
 
 Apply Kubernetes manifests:
 
@@ -111,4 +92,3 @@ kubectl apply -f k8s/services.yaml
 * Hands-on experience with **cloud-native technologies, containerization, and orchestration**
 
 ---
-
