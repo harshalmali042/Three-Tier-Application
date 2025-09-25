@@ -18,3 +18,4 @@ EXPOSE 3000
 
 # Specify the command to run when the container starts
 CMD [ "npm", "start" ]
+
